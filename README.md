@@ -9,7 +9,9 @@ package name, such as `ruby-2.3.1p1`.
 
 ## Notes for Debian/Ubuntu
 
-Use `ansible-role-apt-repo` to install
+Use
+[`ansible-role-apt-repo`](https://github.com/reallyenglish/ansible-role-apt-repo)
+to install
 [`ruby-ng`](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng) PPA if
 the version of the `ruby` is not in the apt repository.
 
