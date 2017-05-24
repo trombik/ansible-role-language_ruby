@@ -1,0 +1,6 @@
+---
+
+- name: Install language-ruby
+  pkgng:
+    name: language-ruby
+    state: present

@@ -1,0 +1,8 @@
+language-ruby_user: language-ruby
+language-ruby_group: language-ruby
+language-ruby_log_dir: /var/log/language-ruby
+language-ruby_db_dir: "{{ __language-ruby_db_dir }}"
+language-ruby_service: language-ruby
+language-ruby_conf_dir: "{{ __language-ruby_conf_dir }}"
+language-ruby_conf_file: "{{ __language-ruby_conf_dir }}/language-ruby.conf"
+language-ruby_flags: ""
