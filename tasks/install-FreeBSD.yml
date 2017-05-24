@@ -5,7 +5,7 @@
     name: "{{ language_ruby_package }}"
     state: present
 
-    - name: Install devel/ruby-gems
+- name: Install devel/ruby-gems
   pkgng:
     name: devel/ruby-gems
     state: present
