@@ -1,2 +1,1 @@
-__language-ruby_db_dir: /var/db/language-ruby
-__language-ruby_conf_dir: /usr/local/etc/language-ruby
+__language_ruby_package: lang/ruby

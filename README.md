@@ -1,6 +1,17 @@
 # ansible-role-language-ruby
 
-A brief description of the role goes here.
+Installs `ruby` and `gem`.
+
+## Notes for OpenBSD
+
+You cannot use `ruby%2.3` in `language_ruby_package`. It only supports full
+package name, such as `ruby-2.3.1p1`.
+
+## Notes for Debian/Ubuntu
+
+Use `ansible-role-apt-repo` to install
+[`ruby-ng`](https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng) PPA if
+the version of the `ruby` is not in the apt repository.
 
 # Requirements
 
@@ -8,9 +19,33 @@ None
 
 # Role Variables
 
-| variable | description | default |
+| Variable | Description | Default |
 |----------|-------------|---------|
+| `language_ruby_package` | package name of `ruby` | `{{ __language_ruby_package }}` |
 
+## Debian
+
+| Variable | Default |
+|----------|---------|
+| `__language_ruby_package` | `ruby` |
+
+## FreeBSD
+
+| Variable | Default |
+|----------|---------|
+| `__language_ruby_package` | `lang/ruby` |
+
+## OpenBSD
+
+| Variable | Default |
+|----------|---------|
+| `__language_ruby_package` | `ruby-2.3.1p1` |
+
+## RedHat
+
+| Variable | Default |
+|----------|---------|
+| `__language_ruby_package` | `ruby` |
 
 # Dependencies
 
@@ -19,6 +54,11 @@ None
 # Example Playbook
 
 ```yaml
+- hosts: localhost
+  roles:
+    - ansible-role-language-ruby
+  vars:
+    language_ruby_package: "{% if ansible_os_family == 'FreeBSD' %}lang/ruby22{% elif ansible_os_family == 'OpenBSD' %}ruby-2.2.5p1{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'trusty' %}ruby2.0{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'xenial' %}ruby2.3{% elif ansible_os_family == 'RedHat' %}ruby{% endif %}"
 ```
 
 # License
