@@ -2,4 +2,4 @@
   roles:
     - ansible-role-language-ruby
   vars:
-    language_ruby_package: "{% if ansible_os_family == 'FreeBSD' %}lang/ruby22{% elif ansible_os_family == 'OpenBSD' %}ruby-2.2.5p1{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'trusty' %}ruby2.0{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'xenial' %}ruby2.3{% elif ansible_os_family == 'RedHat' %}ruby{% endif %}"
+    language_ruby_package: "{% if ansible_os_family == 'FreeBSD' %}lang/ruby22{% elif ansible_os_family == 'OpenBSD' %}ruby%2.2{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'trusty' %}ruby2.0{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'xenial' %}ruby2.3{% elif ansible_os_family == 'RedHat' %}ruby{% endif %}"

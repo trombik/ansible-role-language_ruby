@@ -1,2 +1,1 @@
-# XXX you cannot use ruby%2.3 here
-__language_ruby_package: ruby-2.3.1p1
+__language_ruby_package: ruby%2.3

@@ -2,11 +2,6 @@
 
 Installs `ruby` and `gem`.
 
-## Notes for OpenBSD
-
-You cannot use `ruby%2.3` in `language_ruby_package`. It only supports full
-package name, such as `ruby-2.3.1p1`.
-
 ## Notes for Debian/Ubuntu
 
 Use
@@ -41,7 +36,7 @@ None
 
 | Variable | Default |
 |----------|---------|
-| `__language_ruby_package` | `ruby-2.3.1p1` |
+| `__language_ruby_package` | `ruby%2.3` |
 
 ## RedHat
 

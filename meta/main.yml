@@ -22,5 +22,4 @@ galaxy_info:
   galaxy_tags:
     - language
     - ruby
-#dependencies:
-#  - { role: username.common, some_parameter: 3 }
+dependencies:
