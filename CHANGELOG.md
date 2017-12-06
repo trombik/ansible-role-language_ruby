@@ -1,3 +1,7 @@
+## Release 1.0.3
+
+* 60e4614 [bugfix] Update rubocop to the latest (#1)
+
 ## Release 1.0.2
 
 * 9db43ed [bugfix] Remove fixed version (#5)
