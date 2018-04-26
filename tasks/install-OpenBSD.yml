@@ -1,6 +1,6 @@
 ---
 
-- name: Install runby
+- name: Install ruby
   openbsd_pkg:
     name: "{{ language_ruby_package }}"
     state: present
