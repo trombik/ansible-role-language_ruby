@@ -1,3 +1,7 @@
+## Release 1.1.0
+
+* e2c213c [feature] Support OpenBSD 6.3, drop EoLed release (#3)
+
 ## Release 1.0.3
 
 * 60e4614 [bugfix] Update rubocop to the latest (#1)
