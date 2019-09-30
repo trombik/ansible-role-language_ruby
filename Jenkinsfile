@@ -1,6 +1,6 @@
 node ('virtualbox') {
 
-  def directory = "ansible-role-language-ruby"
+  def directory = "ansible-role-language_ruby"
   env.ANSIBLE_VAULT_PASSWORD_FILE = "~/.ansible_vault_key"
   stage 'Clean up'
   deleteDir()
