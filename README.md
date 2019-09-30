@@ -1,4 +1,4 @@
-# ansible-role-language-ruby
+# `trombik.language_ruby`
 
 Installs `ruby` and `gem`.
 
@@ -36,7 +36,7 @@ None
 
 | Variable | Default |
 |----------|---------|
-| `__language_ruby_package` | `ruby%2.3` |
+| `__language_ruby_package` | `ruby%2.6` |
 
 ## RedHat
 
