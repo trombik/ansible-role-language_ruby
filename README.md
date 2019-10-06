@@ -30,7 +30,8 @@ None
 
 | Variable | Default |
 |----------|---------|
-| `__language_ruby_package` | `lang/ruby` |
+| `__language_ruby_package` | `lang/ruby26` |
+
 
 ## OpenBSD
 
