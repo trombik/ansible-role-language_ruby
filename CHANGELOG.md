@@ -1,3 +1,7 @@
+## Release 1.1.2
+
+* 9ee431f bugfix: lang/ruby for FreeBSD has gone
+
 ## Release 1.1.1
 
 * d456cf4 QA
