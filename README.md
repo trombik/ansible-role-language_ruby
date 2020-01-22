@@ -45,6 +45,19 @@ None
 |----------|---------|
 | `__language_ruby_package` | `ruby` |
 
+# Facts
+
+The role sets `language_ruby_version` fact with the following keys when ruby
+version is `2.3.4`:
+
+| Key           | Value   |
+|---------------|---------|
+| `full`        | `2.3.4` |
+| `short`       | `23`    |
+| `major`       | `2`     |
+|` minor`       | `3`     |
+| `patch_level` | `4`     |
+
 # Dependencies
 
 None
