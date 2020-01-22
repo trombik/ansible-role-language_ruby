@@ -1,3 +1,8 @@
+## Release 1.2.0
+
+* ff2592a bugfix: QA
+* 11f956b feature: export language_ruby_version fact
+
 ## Release 1.1.2
 
 * 9ee431f bugfix: lang/ruby for FreeBSD has gone
