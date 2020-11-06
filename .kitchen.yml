@@ -18,9 +18,7 @@ provisioner:
   http_proxy: <%= ENV['ANSIBLE_PROXY'] %>
   idempotency_test: true
   additional_copy_path:
-    - extra_modules
     - filter_plugins
-  ansible_vault_password_file: <%= File.expand_path(ENV['ANSIBLE_VAULT_PASSWORD_FILE'] || '') %>
 
 platforms:
   - name: freebsd-12.1-amd64
