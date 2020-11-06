@@ -4,7 +4,7 @@
     - ansible-role-language_ruby
   vars:
     ruby_version:
-      FreeBSD: lang/ruby24
+      FreeBSD: lang/ruby26
       OpenBSD: ruby%2.5
       Debian: ruby
       RedHat: ruby
