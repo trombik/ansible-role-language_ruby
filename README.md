@@ -30,14 +30,14 @@ None
 
 | Variable | Default |
 |----------|---------|
-| `__language_ruby_package` | `lang/ruby26` |
+| `__language_ruby_package` | `lang/ruby27` |
 
 
 ## OpenBSD
 
 | Variable | Default |
 |----------|---------|
-| `__language_ruby_package` | `ruby%2.6` |
+| `__language_ruby_package` | `ruby%2.7` |
 
 ## RedHat
 
