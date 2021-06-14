@@ -5,7 +5,7 @@
   vars:
     ruby_version:
       FreeBSD: lang/ruby26
-      OpenBSD: ruby%2.5
+      OpenBSD: ruby%2.6
       Debian: ruby
       RedHat: ruby
     language_ruby_package: "{{ ruby_version[ansible_os_family] }}"
