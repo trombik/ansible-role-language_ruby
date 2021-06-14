@@ -1,3 +1,13 @@
+## Release 1.2.1
+
+* 9d53a99 bugfix: update box versions and ruby versions
+* 248d36e bugfix: add GitHub Actions workflows
+* 9eebc34 bugfix: remove unused ansible_vault_password_file
+* a5a735d bufix: update gems, un-ignore Gemfile.lock
+* 17060cc bugfix: update boxes
+* 7b89e66 bugfix: ruby24 is dead in FreeBSD ports, moved to ruby26
+* 7c40890 bugfix: QA
+
 ## Release 1.2.0
 
 * ff2592a bugfix: QA
