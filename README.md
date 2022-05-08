@@ -1,6 +1,6 @@
 # `trombik.language_ruby`
 
-Installs `ruby` and `gem`.
+Installs `ruby`, `gem`, and `bundler`.
 
 ## Notes for Debian/Ubuntu
 
@@ -25,6 +25,8 @@ None
 ```yaml
 ---
 __language_ruby_package: ruby
+language_ruby_bundler_package: bundler
+language_ruby_gem_package: ''
 ```
 
 ## FreeBSD
@@ -32,6 +34,8 @@ __language_ruby_package: ruby
 ```yaml
 ---
 __language_ruby_package: lang/ruby27
+__language_ruby_bundler_package: sysutils/rubygem-bundler
+__language_ruby_gem_package: devel/ruby-gems sysutils/rubygem-bundler
 ```
 
 ## OpenBSD
@@ -39,6 +43,8 @@ __language_ruby_package: lang/ruby27
 ```yaml
 ---
 __language_ruby_package: ruby%2.7
+__language_ruby_bundler_package: ''
+__language_ruby_gem_package: ''
 ```
 
 ## RedHat
@@ -46,6 +52,8 @@ __language_ruby_package: ruby%2.7
 ```yaml
 ---
 __language_ruby_package: ruby
+__language_ruby_bundler_package: rubygem-bundler
+__language_ruby_gem_package: ''
 ```
 
 ## Fedora
@@ -53,6 +61,8 @@ __language_ruby_package: ruby
 ```yaml
 ---
 __language_ruby_package: "@ruby:2.7/default"
+__language_ruby_bundler_package: rubygem-bundler
+__language_ruby_gem_package: ''
 ```
 
 # Facts
