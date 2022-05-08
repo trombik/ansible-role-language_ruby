@@ -1,3 +1,14 @@
+## Release 1.3.0
+
+* 360bd96 bugfix: fix syntax error
+* b691d7b ci: fix wrong latest download URL in CI
+* 0901fcf bugfix: QA
+* 92ed7b8 feat: install bundler as well
+* cc97433 ci: add kitchen workflow
+* e641c45 doc: update README
+* 9109ec2 update: support Fedora
+* 242a066 update: drop Ubuntu 18, update to Devuan 4, OpenBSD 7.0
+
 ## Release 1.2.1
 
 * 9d53a99 bugfix: update box versions and ruby versions
