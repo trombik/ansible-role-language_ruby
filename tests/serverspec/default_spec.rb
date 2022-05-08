@@ -6,7 +6,7 @@ package = "ruby"
 
 case os[:family]
 when "freebsd"
-  package = "lang/ruby26"
+  package = "lang/ruby27"
 when "ubuntu"
   if host_inventory["platform_version"].to_f == 16.04
     package = "ruby2.3"
