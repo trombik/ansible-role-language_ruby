@@ -9,18 +9,19 @@ galaxy_info:
   platforms:
     - name: FreeBSD
       versions:
-        - 12.2
+        - 12.3
         - 13.0
     - name: OpenBSD
       versions:
         - 6.9
+        - 7.0
     - name: Ubuntu
       versions:
-        - bionic
         - focal
     - name: Devuan
       versions:
         - beowulf
+        - chimaera
     - name: EL
       versions:
         - 7
