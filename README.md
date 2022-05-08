@@ -22,28 +22,38 @@ None
 
 ## Debian
 
-| Variable | Default |
-|----------|---------|
-| `__language_ruby_package` | `ruby` |
+```yaml
+---
+__language_ruby_package: ruby
+```
 
 ## FreeBSD
 
-| Variable | Default |
-|----------|---------|
-| `__language_ruby_package` | `lang/ruby27` |
-
+```yaml
+---
+__language_ruby_package: lang/ruby27
+```
 
 ## OpenBSD
 
-| Variable | Default |
-|----------|---------|
-| `__language_ruby_package` | `ruby%2.7` |
+```yaml
+---
+__language_ruby_package: ruby%2.7
+```
 
 ## RedHat
 
-| Variable | Default |
-|----------|---------|
-| `__language_ruby_package` | `ruby` |
+```yaml
+---
+__language_ruby_package: ruby
+```
+
+## Fedora
+
+```yaml
+---
+__language_ruby_package: "@ruby:2.7/default"
+```
 
 # Facts
 
@@ -65,11 +75,17 @@ None
 # Example Playbook
 
 ```yaml
+---
 - hosts: localhost
   roles:
-    - ansible-role-language-ruby
+    - ansible-role-language_ruby
   vars:
-    language_ruby_package: "{% if ansible_os_family == 'FreeBSD' %}lang/ruby24{% elif ansible_os_family == 'OpenBSD' %}ruby%2.3{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'trusty' %}ruby2.0{% elif ansible_os_family == 'Debian' and ansible_distribution_release == 'xenial' %}ruby2.3{% elif ansible_os_family == 'RedHat' %}ruby{% endif %}"
+    ruby_version:
+      FreeBSD: lang/ruby27
+      OpenBSD: ruby%2.7
+      Debian: ruby
+      RedHat: ruby
+    language_ruby_package: "{{ ruby_version[ansible_os_family] }}"
 ```
 
 # License
