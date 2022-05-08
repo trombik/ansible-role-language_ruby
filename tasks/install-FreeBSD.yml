@@ -5,7 +5,12 @@
     name: "{{ language_ruby_package }}"
     state: present
 
-- name: Install devel/ruby-gems
+- name: Install gem
   pkgng:
-    name: devel/ruby-gems
+    name: "{{ language_ruby_gem_package }}"
+    state: present
+
+- name: Install bundler
+  pkgng:
+    name: "{{ language_ruby_bundler_package }}"
     state: present

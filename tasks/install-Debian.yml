@@ -4,3 +4,7 @@
   apt:
     name: "{{ language_ruby_package }}"
     state: present
+
+- name: Install bundler
+  ansible.builtin.apt:
+    name: "{{ language_ruby_bundler_package }}"
